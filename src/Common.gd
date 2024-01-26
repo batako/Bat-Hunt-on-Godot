@@ -1,0 +1,1 @@
+const ENEMY_INSTANCE_BASE_NAME = "Enemy"

@@ -18,6 +18,7 @@ config/icon="res://assets/images/icon.png"
 [autoload]
 
 GameState="*res://src/GameState.gd"
+Common="*res://src/Common.gd"
 
 [display]
 

@@ -4,7 +4,7 @@ func _process(delta):
 	if GameState.current_state == GameState.GameStates.IN_GAME:
 		var cnt = 0
 		for child in get_children():
-			if "Bat" in child.name:
+			if Common.ENEMY_INSTANCE_BASE_NAME in child.name:
 				cnt += 1
 
 		if cnt == 0:
