@@ -1,6 +1,8 @@
 # Bat Hunt: Wings of Darkness
 
-## Story
+[Read this in English](README.en.md)
+
+## ストーリー
 
 深夜、一つの伝説が目を覚ます。千年に一度、月の光がダーククリスタルに触れるとき、暗黒のコウモリ「シャドウバッツ」がこの世に現れます。あなたはルナハンターの末裔として選ばれ、暗闇に潜むこれらの生き物を追い詰め、世界を救う使命を担っています。
 
@@ -12,19 +14,19 @@
 
 「Bat Hunt: Wings of Darkness」で、伝説のハンターとしての運命に立ち向かいましょう。
 
-## Screenshot
+## スクリーンショット
 
-![title](screenshots/title.png)
-![gameplay](screenshots/gameplay.png)
+![タイトル画像](screenshots/title.png)
+![プレイ画像](screenshots/gameplay.png)
 
-## Credits
+## クレジット
 
-### Images
+### 画像
 
 - 爆発エフェクト: `assets/images/explosion.png`
   - Source: 【Godot Engine】クリックゲームチュートリアル - YouTube ([Link](https://www.youtube.com/watch?v=mvqxnvuAlEc&t=1s))
 
-### Fonts
+### フォント
 
 - Xolonium: `assets/fonts/Xolonium-Regular.ttf`
   - Source: Xolonium Font \| dafont.com ([Link](https://www.dafont.com/xolonium.font))
