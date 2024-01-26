@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwindopns08nl"]
+
+[ext_resource type="Script" path="res://src/Title.gd" id="1_ui8qq"]
+[ext_resource type="Texture2D" uid="uid://blsakc37lrcfh" path="res://assets/images/title.png" id="1_xjed7"]
+
+[node name="Title" type="Node2D"]
+script = ExtResource("1_ui8qq")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_xjed7")

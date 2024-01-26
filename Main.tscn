@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://brbchyd6ffnwi"]
+
+[ext_resource type="Texture2D" uid="uid://dnwa3nscjejwa" path="res://assets/images/bg.png" id="1_36vn2"]
+[ext_resource type="Script" path="res://Main.gd" id="1_qn5bm"]
+[ext_resource type="FontFile" uid="uid://bh23is5vgbx68" path="res://assets/fonts/Xolonium-Regular.ttf" id="4_ma4ya"]
+[ext_resource type="PackedScene" uid="uid://cwindopns08nl" path="res://src/Title.tscn" id="5_surit"]
+
+[sub_resource type="Theme" id="Theme_b7tea"]
+default_font = ExtResource("4_ma4ya")
+default_font_size = 50
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rc23s"]
+size = Vector2(800, 456)
+
+[node name="Main" type="Area2D"]
+script = ExtResource("1_qn5bm")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(400, 228.5)
+texture = ExtResource("1_36vn2")
+
+[node name="Title" parent="." instance=ExtResource("5_surit")]
+visible = false
+position = Vector2(400, 228.5)
+
+[node name="GameClearLabel" type="Label" parent="."]
+visible = false
+offset_right = 800.0
+offset_bottom = 456.0
+theme = SubResource("Theme_b7tea")
+theme_override_colors/font_outline_color = Color(0.392157, 0.392157, 0.392157, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 80
+text = "GAME CLEAR!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(400, 228)
+shape = SubResource("RectangleShape2D_rc23s")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
