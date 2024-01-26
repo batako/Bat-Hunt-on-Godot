@@ -9,8 +9,7 @@ enum GameStates {
 
 var current_state = GameStates.INITIAL
 
-# 敵のシーン
-const enemy = preload("res://src/Bat.tscn")
+const EnemyBat = preload("res://src/Bat.tscn")
 
 func _ready():
 	set_game_state(GameStates.INITIAL)
@@ -49,7 +48,7 @@ func _spawn_enemies(number_of_enemies: int):
 
 	for i in range(number_of_enemies):
 		# 敵のインスタンスを作成
-		var enemy_instance = enemy.instantiate()
+		var enemy_instance = EnemyBat.instantiate()
 		
 		# ランダムな位置を生成
 		var random_x = randf_range(0.0, viewport_rect.size.x)

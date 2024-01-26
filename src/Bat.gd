@@ -4,7 +4,7 @@ extends Area2D
 const MOVE_SPEED = 200
 
 # 爆発オブジェクトを読み込んでおく
-const EXPLOSION_OBJ = preload("res://src/Explosion.tscn")
+const Explosion = preload("res://src/Explosion.tscn")
 
 # 画像サイズ
 var _screen = Rect2()
@@ -56,7 +56,7 @@ func _on_input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.is_pressed():
 			# 爆発オブジェクトを作る
-			var explosion = EXPLOSION_OBJ.instantiate()
+			var explosion = Explosion.instantiate()
 			# 自分の位置に爆発を生成する
 			explosion.position = position
 			# ルートオブジェクトに登録する
